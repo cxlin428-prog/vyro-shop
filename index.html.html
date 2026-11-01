@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="VYRO – ausgewählte Produkte für Technik, Auto, Zuhause und Lifestyle.">
+<title>VYRO — Discover what moves you</title>
+<style>
+:root{--ink:#171715;--muted:#77766f;--cream:#f4f1e9;--paper:#fffefa;--line:#e5e1d8;--sand:#d8cbb6;--accent:#a18c70}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+.top{background:var(--ink);color:#f7f4ed;text-align:center;padding:10px 16px;font-size:11px;letter-spacing:1.8px}
+header{height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;border-bottom:1px solid var(--line);background:#fffefa;position:sticky;top:0;z-index:5}
+.logo{font-size:28px;font-weight:800;letter-spacing:5px}.logo span{font-weight:300}
+nav{display:flex;gap:28px;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:#55544e}
+.actions{display:flex;gap:16px;align-items:center}.iconbtn{border:0;background:none;font-size:13px;color:var(--ink)}
+.hero{margin:24px auto 0;width:88%;min-height:430px;background:linear-gradient(115deg,rgba(15,15,14,.78),rgba(15,15,14,.15)),linear-gradient(135deg,#383833,#b5aa98 58%,#e3ded4);display:flex;align-items:center;padding:7vw;color:white;position:relative;overflow:hidden}
+.hero:after{content:"V";position:absolute;right:7%;bottom:-100px;font-size:460px;font-weight:900;color:#ffffff12;line-height:1}
+.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#ded6c9}.hero h1{font-size:clamp(42px,6vw,76px);line-height:.98;max-width:600px;margin:20px 0;font-weight:500;letter-spacing:-2px}.hero p{max-width:390px;color:#e4e0d8;line-height:1.7;font-size:14px}
+.cta{display:inline-block;margin-top:18px;padding:15px 24px;background:#f6f2e9;color:#171715;font-size:11px;letter-spacing:1.8px;text-transform:uppercase;border:0}
+.section{width:88%;margin:78px auto}.sectionhead{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px}.sectionhead h2{font-size:30px;font-weight:500;margin:8px 0 0;letter-spacing:-.8px}.kicker{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted)}
+.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.cat{background:var(--cream);padding:22px 12px;text-align:center;font-size:11px;letter-spacing:1px;text-transform:uppercase;border:1px solid transparent;transition:.2s}.cat:hover,.cat.active{border-color:#9d907c;background:#e9e3d8}
+.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:transparent;padding:9px 14px;font-size:11px;color:#5c5a54}.filter.active{background:var(--ink);color:white;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{border:1px solid var(--line);background:white;min-width:0}.visual{height:235px;background:linear-gradient(145deg,#eeece6,#d8d1c5);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.visual .symbol{font-size:62px;color:#6f6b62;opacity:.75}.visual .tag{position:absolute;top:12px;left:12px;background:#fffefa;padding:7px 9px;font-size:9px;letter-spacing:1.4px;text-transform:uppercase}.pbody{padding:16px}.category{font-size:9px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted)}.pbody h3{font-size:15px;font-weight:500;margin:8px 0}.desc{font-size:11px;line-height:1.55;color:var(--muted);min-height:34px}.price{font-size:15px;font-weight:600;margin:14px 0 10px}.small{font-size:10px;color:var(--muted);font-weight:400}.add{width:100%;padding:12px;border:1px solid var(--ink);background:var(--ink);color:white;font-size:10px;letter-spacing:1.2px;text-transform:uppercase}.add:disabled{background:#eeeae2;border-color:#eeeae2;color:#777;cursor:not-allowed}
+.notice{background:var(--cream);padding:22px 24px;font-size:12px;line-height:1.7;color:#5e5b54;margin-top:25px}
+.feature{display:grid;grid-template-columns:1fr 1fr;background:#eee9df;min-height:260px}.featureart{display:flex;align-items:center;justify-content:center;font-size:100px;color:#7e766a;background:linear-gradient(135deg,#d7d0c4,#eee9df)}.featuretext{padding:45px;align-self:center}.featuretext h2{font-weight:500;font-size:28px;margin:10px 0}.featuretext p{font-size:13px;line-height:1.7;color:#6a675f}
+footer{background:#171715;color:#eeeae1;padding:55px 6vw 28px}.footgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}.footlogo{font-size:27px;letter-spacing:5px;font-weight:800}.footnote{font-size:12px;color:#b9b4aa;line-height:1.8;max-width:330px}.foothead{font-size:10px;letter-spacing:2px;margin-bottom:15px}.footlinks{display:grid;gap:10px;font-size:12px;color:#c9c3b8}.legal{border-top:1px solid #45433e;margin-top:40px;padding-top:18px;color:#aaa49a;font-size:10px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.cartpanel{position:fixed;right:18px;top:90px;width:min(350px,calc(100vw - 36px));background:white;border:1px solid var(--line);box-shadow:0 15px 45px #0002;padding:20px;z-index:10;display:none}.cartpanel.open{display:block}.cartrow{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:12px}.carttotal{display:flex;justify-content:space-between;padding:18px 0;font-weight:700}.cartclose{float:right;border:0;background:none;font-size:18px}.cartmsg{font-size:11px;color:#766e62;line-height:1.6}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:repeat(3,1fr)}nav{display:none}.hero{min-height:360px}.visual{height:210px}}
+@media(max-width:540px){header{padding:0 5%;height:68px}.logo{font-size:23px}.hero,.section{width:92%}.hero{min-height:350px;padding:8vw}.section{margin:55px auto}.sectionhead{display:block}.grid{gap:10px}.visual{height:155px}.visual .symbol{font-size:46px}.pbody{padding:12px}.pbody h3{font-size:13px}.feature{grid-template-columns:1fr}.featureart{min-height:160px}.featuretext{padding:28px}.footgrid{grid-template-columns:1fr 1fr}.footgrid>div:first-child{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<div class="top">VYRO — SELECTED FINDS FOR EVERYDAY LIFE</div>
+<header>
+  <a class="logo" href="#">VYRO<span>.</span></a>
+  <nav><a href="#shop">Shop</a><a href="#kategorien">Kategorien</a><a href="#about">Über VYRO</a></nav>
+  <div class="actions"><button class="iconbtn" onclick="toggleCart()">WARENKORB (<span id="count">0</span>)</button></div>
+</header>
+<section class="hero">
+  <div>
+    <div class="eyebrow">Curated essentials · 2026</div>
+    <h1>Discover what<br>moves you.</h1>
+    <p>Ausgewählte Ideen für Auto, Technik, Zuhause und Alltag. Klar im Design. Praktisch im Leben.</p>
+    <a class="cta" href="#shop">Kollektion entdecken</a>
+  </div>
+</section>
+<section class="section" id="kategorien">
+  <div class="sectionhead"><div><div class="kicker">Finde deinen Bereich</div><h2>Shop nach Kategorie</h2></div></div>
+  <div class="categories">
+    <a class="cat" href="#shop" onclick="setFilter('Auto')">Auto & Zubehör</a>
+    <a class="cat" href="#shop" onclick="setFilter('Technik')">Technik & Gadgets</a>
+    <a class="cat" href="#shop" onclick="setFilter('Wohnen')">Wohnen</a>
+    <a class="cat" href="#shop" onclick="setFilter('Lifestyle')">Lifestyle</a>
+    <a class="cat" href="#shop" onclick="setFilter('Alltag')">Alltag & Ordnung</a>
+    <a class="cat" href="#shop" onclick="setFilter('Alle')">Alle Produkte</a>
+  </div>
+</section>
+<section class="section" id="shop">
+  <div class="sectionhead"><div><div class="kicker">Die erste Auswahl</div><h2>VYRO Essentials</h2></div><div class="kicker">Sortiment im Aufbau</div></div>
+  <div class="filters">
+    <button class="filter active" onclick="setFilter('Alle')">Alle</button>
+    <button class="filter" onclick="setFilter('Auto')">Auto</button>
+    <button class="filter" onclick="setFilter('Technik')">Technik</button>
+    <button class="filter" onclick="setFilter('Wohnen')">Wohnen</button>
+    <button class="filter" onclick="setFilter('Lifestyle')">Lifestyle</button>
+    <button class="filter" onclick="setFilter('Alltag')">Alltag</button>
+  </div>
+  <div class="grid" id="products">
+    <article class="product" data-cat="Auto">
+      <div class="visual"><span class="tag">Produkt in Prüfung</span><span class="symbol">✧</span></div>
+      <div class="pbody"><div class="category">Auto & Zubehör</div><h3>USB Ambient Light · 2 m</h3><div class="desc">Dezente blaue LED-Beleuchtung für den Fahrzeuginnenraum.</div><div class="price">Preis folgt <span class="small">· Lieferant wird geprüft</span></div><button class="add" disabled>Noch nicht verfügbar</button></div>
+    </article>
+    <article class="product" data-cat="Auto">
+      <div class="visual"><span class="tag">Produkt in Prüfung</span><span class="symbol">◉</span></div>
+      <div class="pbody"><div class="category">Auto & Zubehör</div><h3>Teleskop Handyhalterung</h3><div class="desc">Verstellbare Halterung für Navigation und Alltag im Auto.</div><div class="price">Preis folgt <span class="small">· Lieferant wird geprüft</span></div><button class="add" disabled>Noch nicht verfügbar</button></div>
+    </article>
+    <article class="product" data-cat="Technik">
+      <div class="visual"><span class="tag">In Vorbereitung</span><span class="symbol">⌁</span></div>
+      <div class="pbody"><div class="category">Technik & Gadgets</div><h3>Kabel-Organizer Set</h3><div class="desc">Kleine Helfer für einen aufgeräumten Schreibtisch.</div><div class="price">Preis folgt <span class="small">· Lieferant wird geprüft</span></div><button class="add" disabled>Demnächst</button></div>
+    </article>
+    <article class="product" data-cat="Wohnen">
+      <div class="visual"><span class="tag">In Vorbereitung</span><span class="symbol">▤</span></div>
+      <div class="pbody"><div class="category">Wohnen</div><h3>Modularer Schubladen-Organizer</h3><div class="desc">Flexible Ordnung für Bad, Küche und Schlafzimmer.</div><div class="price">Preis folgt <span class="small">· Lieferant wird geprüft</span></div><button class="add" disabled>Demnächst</button></div>
+    </article>
+    <article class="product" data-cat="Lifestyle">
+      <div class="visual"><span class="tag">In Vorbereitung</span><span class="symbol">◇</span></div>
+      <div class="pbody"><div class="category">Lifestyle</div><h3>Everyday Carry Organizer</h3><div class="desc">Kompakte Aufbewahrung für kleine Dinge unterwegs.</div><div class="price">Preis folgt <span class="small">· Lieferant wird geprüft</span></div><button class="add" disabled>Demnächst</button></div>
+    </article>
+    <article class="product" data-cat="Alltag">
+      <div class="visual"><span class="tag">In Vorbereitung</span><span class="symbol">▦</span></div>
+      <div class="pbody"><div class="category">Alltag & Ordnung</div><h3>Faltbarer Aufbewahrungshelfer</h3><div class="desc">Praktische Aufbewahrung für Zuhause und unterwegs.</div><div class="price">Preis folgt <span class="small">· Lieferant wird geprüft</span></div><button class="add" disabled>Demnächst</button></div>
+    </article>
+  </div>
+  <div class="notice"><strong>Hinweis zum Start:</strong> Das Sortiment wird gerade zusammengestellt. Produkte werden erst zum Kauf freigeschaltet, wenn Lieferant, Versandkosten, Produktqualität und erforderliche EU-Nachweise geprüft wurden. Aktuell sind keine Bestellungen oder Zahlungen möglich.</div>
+</section>
+<section class="section feature" id="about">
+  <div class="featureart">V.</div>
+  <div class="featuretext"><div class="kicker">Weniger suchen. Besser auswählen.</div><h2>Everyday finds.<br>VYRO quality.</h2><p>VYRO bündelt praktische Produkte und moderne Alltagsideen an einem Ort. Wir bauen unser Sortiment Schritt für Schritt auf — mit Fokus auf klare Auswahl und ein zeitloses Erscheinungsbild.</p></div>
+</section>
+<footer>
+  <div class="footgrid">
+    <div><div class="footlogo">VYRO.</div><p class="footnote">Discover what moves you.<br>Ausgewählte Produkte für deinen Alltag.</p></div>
+    <div><div class="foothead">SHOP</div><div class="footlinks"><a href="#shop">Alle Produkte</a><a href="#kategorien">Kategorien</a><a href="#about">Über VYRO</a></div></div>
+    <div><div class="foothead">INFORMATIONEN</div><div class="footlinks"><span>Kontakt — folgt vor Verkaufsstart</span><span>Impressum — folgt vor Verkaufsstart</span><span>Datenschutz — folgt vor Verkaufsstart</span></div></div>
+  </div>
+  <div class="legal"><span>© 2026 VYRO. Alle Rechte vorbehalten.</span><span>Demo-Shop · Noch kein aktiver Verkauf</span></div>
+</footer>
+<aside class="cartpanel" id="cart"><button class="cartclose" onclick="toggleCart()">×</button><h3>Warenkorb</h3><p class="cartmsg">Der Warenkorb ist eine Design-Vorschau. Bestellungen und Zahlungen sind noch nicht aktiviert.</p><div id="cartitems"></div><div class="carttotal"><span>Zwischensumme</span><span>—</span></div></aside>
+<script>
+let current='Alle';
+function setFilter(cat){current=cat;document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('active',b.textContent.trim().toLowerCase()===(cat==='Alle'?'alle':cat.toLowerCase())));document.querySelectorAll('.product').forEach(p=>p.style.display=(cat==='Alle'||p.dataset.cat===cat)?'':'none')}
+function toggleCart(){document.getElementById('cart').classList.toggle('open')}
+</script>
+</body>
+</html>
